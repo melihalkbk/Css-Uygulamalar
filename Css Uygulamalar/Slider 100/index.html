@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Custom Input Range Slider</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="box">
+			<input type="range" class="range" value="0" min="0" max="100" onmousemove="rangeSlider(this.value)">
+			<span id="rangeValue">0</span>
+		</div>
+		<script>
+			function rangeSlider(value){
+				document.getElementById('rangeValue').innerHTML = value;
+			}
+		</script>
+	</body>
+</html>

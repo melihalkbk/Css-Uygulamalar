@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #fff;
+}
+ul
+{
+	position: relative;
+	display: flex;
+	gap: 40px;
+}
+ul li
+{
+	position: relative;
+	list-style: none;
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+ul li .fa
+{
+	font-size: 6em;
+	-webkit-text-stroke: 2px var(--clr);
+	color: transparent;
+}
+ul li:before
+{
+	font-family: fontAwesome;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 6em;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+	text-align: center;
+	line-height: 120px;	
+	color: var(--clr);
+	border-bottom: 4px solid var(--clr);
+}
+ul li:nth-child(1):before
+{
+	content: '\f099';
+}
+ul li:nth-child(2):before
+{
+	content: '\f16d';
+}
+ul li:nth-child(3):before
+{
+	content: '\f232';
+}
+ul li:nth-child(4):before
+{
+	content: '\f16a';
+}
+ul li:hover:before
+{
+	height: 100%;
+}
